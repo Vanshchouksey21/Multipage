@@ -1,1 +1,21 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+#navbar div ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 8%;
+  padding-right: 8%;
+  background-color: brown;
+}
+#navbar div ul li {
+  list-style-type: none;
+}
+#navbar div ul li a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
