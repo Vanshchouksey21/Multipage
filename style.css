@@ -8,9 +8,14 @@
 #navbar div ul {
   display: flex;
   justify-content: center;
-  padding-left: 8%;
   padding-right: 8%;
-  background-color: brown;
+  background-color: rgb(97, 47, 47);
+}
+#navbar div ul img {
+  width: 5%;
+  width: 3%;
+  margin-left: 1%;
+  margin-right: 15%;
 }
 #navbar div ul li {
   list-style-type: none;
@@ -18,4 +23,6 @@
 #navbar div ul li a {
   text-decoration: none;
   color: black;
+  margin: 20%;
+  margin-top: 2%;
 }/*# sourceMappingURL=style.css.map */
