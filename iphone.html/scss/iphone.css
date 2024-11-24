@@ -1,0 +1,213 @@
+* {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+nav {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  padding: 1% 0%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 95%;
+  padding: 1% 3%;
+  transition: color 0.8s ease-out;
+}
+
+.navbar li a:hover {
+  color: #007aff;
+}
+
+.fa-apple {
+  font-size: 140%;
+  margin-right: 2%;
+  color: #000;
+}
+
+.ph-head {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  padding: 1.2%;
+}
+
+.ph-h1 {
+  font-size: 230%;
+  text-align: left;
+  margin-left: 2%;
+}
+
+.ph--h1 {
+  font-size: 180%;
+  text-align: right;
+  margin-right: 2%;
+}
+
+.ph-vdo {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.ph-lineup {
+  padding: 1%;
+  font-size: 160%;
+}
+
+.ph-ph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 60%;
+  padding: 10px;
+}
+
+.ph-ph ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.ph-ph ul li {
+  max-width: 25%;
+  box-sizing: border-box;
+}
+
+.ph-ph ul li p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.buy-button {
+  display: inline-block;
+  background-color: #007aff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 2% 5%;
+  border-radius: 4%;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.buy-button:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
+
+.ph-ph ul li img {
+  height: 60vh;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ph-ph ul li img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .ph-ph ul li {
+    flex: 1 1 calc(100% - 20px); /* Each image takes up 100% on very small screens */
+    max-width: 100%;
+  }
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Ensures links wrap on smaller screens */
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap; /* Adjust icons for smaller screens */
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #007aff;
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  margin: 15px 0 0;
+}
+
+.footer-copyright-2 {
+  padding-left: 85%;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .div1-pro {
+    display: none;
+  }
+  .footer-links ul li a {
+    font-size: 12px; /* Smaller font for compact devices */
+  }
+  .footer-social a {
+    font-size: 16px; /* Adjust icon size */
+    margin: 0 5px;
+  }
+  .footer-copyright p {
+    font-size: 12px; /* Adjust copyright text size */
+  }
+}/*# sourceMappingURL=iphone.css.map */
