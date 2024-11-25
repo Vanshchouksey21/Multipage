@@ -44,36 +44,7 @@ nav {
   color: #000;
 }
 
-.ph-head {
-  display: flex;
-  text-align: center;
-  width: 100%;
-  padding: 1.2%;
-}
-
-.ph-h1 {
-  font-size: 230%;
-  text-align: left;
-  margin-left: 2%;
-}
-
-.ph--h1 {
-  font-size: 180%;
-  text-align: right;
-  margin-right: 2%;
-}
-
-.ph-vdo {
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-.ph-lineup {
-  padding: 1%;
-  font-size: 160%;
-}
-
-.ph-ph {
+.ipad {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +53,7 @@ nav {
   padding: 10px;
 }
 
-.ph-ph ul {
+.ipad ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -90,104 +61,48 @@ nav {
   gap: 10px;
 }
 
-.ph-ph ul li {
+.ipad ul li {
   max-width: 25%;
-  text-align: center;
   box-sizing: border-box;
 }
 
-ph-ph ul li img {
-  width: 100%;
-  height: auto;
-  border-radius: 5%;
-  margin-bottom: 3%;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.ph-ph ul li img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.ph-ph ul li h2 {
-  font-size: 150%;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 2%;
-}
-
-.ph-ph ul li h4 {
-  font-size: 120%; /* Scalable subtitle size */
-  font-weight: normal;
-  color: #555;
-  margin-bottom: 2%;
-}
-
-.ph-ph ul li p {
-  font-size: 110%;
+.ipad ul li p {
+  font-size: 16px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 1%;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  gap: 5%;
-  margin-top: 3%;
-  padding-bottom: 3%;
-}
-
-.button-11 {
-  display: flex;
-  gap: 4%;
+  margin: 0;
 }
 
 .buy-button {
-  background-color: #2665a3;
-  padding: 3% 6%;
-  font-size: 110%;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  border-radius: 4%;
-  transition: background-color 1.45s ease-out;
-}
-
-.read-more-button {
-  background-color: teal;
-  padding: 3% 6%;
-  font-size: 110%;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  border-radius: 4%;
-  transition: background-color 1.45s ease-out;
-}
-
-.buy-button {
+  display: inline-block;
   background-color: #007aff;
-  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 2% 5%;
+  border-radius: 4%;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .buy-button:hover {
-  background-color: rgb(45, 57, 98);
+  background-color: #005bb5;
   transform: scale(1.05);
 }
 
-.read-more-button {
-  background-color: teal;
-  border-radius: 50px;
+.ipad ul li img {
+  height: 60vh;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.read-more-button:hover {
-  background-color: rgb(9, 41, 43);
+.ipad ul li img:hover {
   transform: scale(1.05);
 }
 
 @media (max-width: 480px) {
-  .ph-ph ul li {
-    flex: 1 1 calc(100% - 20px);
+  .ipad ul li {
+    flex: 1 1 calc(100% - 20px); /* Each image takes up 100% on very small screens */
     max-width: 100%;
   }
 }
@@ -266,4 +181,4 @@ footer {
   .footer-copyright p {
     font-size: 12px; /* Adjust copyright text size */
   }
-}/*# sourceMappingURL=iphone.css.map */
+}/*# sourceMappingURL=ipad.css.map */
