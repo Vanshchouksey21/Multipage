@@ -6,7 +6,7 @@
 }
 
 nav {
-  background-color: transparent;
+  background-color: #000;
   position: relative;
   width: 100%;
   padding: 1% 0%;
@@ -27,11 +27,12 @@ nav {
 }
 
 .navbar li a {
-  color: #000;
+  color: white;
   text-decoration: none;
   font-size: 95%;
   padding: 1% 3%;
   transition: color 0.8s ease-out;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .navbar li a:hover {
@@ -39,9 +40,17 @@ nav {
 }
 
 .fa-apple {
-  font-size: 140%;
+  font-size: 160%;
   margin-right: 2%;
-  color: #000;
+  color: white;
+  margin-left: 2%;
+}
+
+.offer {
+  text-align: center;
+  width: 100%;
+  padding: 1%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 #iphone16 {
@@ -53,7 +62,8 @@ nav {
   background-position: center;
 }
 #iphone16 .div1 h1 {
-  padding-top: 3%;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 1%;
   padding-left: 45%;
   font-size: 40px;
 }
@@ -101,6 +111,7 @@ nav {
 #iphone16-pro .div1-pro h1 {
   padding-left: 39%;
   font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
 }
 #iphone16-pro .div2-pro {
   padding-left: 43%;

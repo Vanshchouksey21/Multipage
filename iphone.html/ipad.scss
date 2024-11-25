@@ -5,7 +5,7 @@
     padding: 0%;
 }
 nav {
-    background-color: transparent;
+    background-color: #000;
     position: relative; 
     width: 100%;
     padding: 1% 0%;
@@ -26,11 +26,12 @@ nav {
 }
 
 .navbar li a {
-    color: #000; 
+    color: white; 
     text-decoration: none; 
     font-size: 95%; 
     padding: 1% 3%; 
     transition: color 0.8s ease-out; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar li a:hover {
@@ -38,9 +39,47 @@ nav {
 }
 
 .fa-apple {
-    font-size: 140%;
+    font-size: 160%;
     margin-right: 2%; 
-    color: #000;
+    color: white;
+    margin-left: 2%;
+}
+.offer{
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mac-head{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding: 1.2%;
+    
+
+}
+.mac-h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 230%;
+    text-align: left;
+    // margin-left: 2%;
+    
+}
+.mac--h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 180%;
+    text-align: right;
+    // margin-right: 2%;
+    
+}
+.mac-vdo{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.mac-lineup{
+    padding: 1%;
+    font-size: 160% ;
+
 }
 .ipad {
     display: flex;
@@ -48,7 +87,8 @@ nav {
     align-items: center; 
     gap: 10px; 
     height: 60%; 
-    padding: 10px; 
+    padding: 1%; 
+    margin: 2%;
 }
 
 .ipad ul {
@@ -58,43 +98,102 @@ nav {
     display: flex;
     gap: 10px; 
 }
-
 .ipad ul li {
     max-width: 25%; 
-    box-sizing: border-box; 
-}
-.ipad ul li p {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin: 0; 
-}
-.buy-button {
-    display: inline-block;
-    background-color: #007aff;
-    color: #fff;
-    text-decoration: none;
-    font-size: 120%;
-    font-weight: bold;
-    padding: 2% 5%;
-    border-radius: 4%;
-    transition: background-color 0.3s ease, transform 0.2s;
-}
-.buy-button:hover {
-    background-color: #005bb5;
-    transform: scale(1.05);
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden ;
 }
 .ipad ul li img {
-    height: 60vh;
-    // object-fit: cover; 
-    border-radius: 8px; 
+    width: 100%; 
+    border-radius: 5%; 
+    margin-bottom: 3%; 
     transition: transform 0.3s, box-shadow 0.3s; 
 }
-
 .ipad ul li img:hover {
     transform: scale(1.05); 
-    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
+.ipad ul li h2 {
+    font-size: 150%; 
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1%;
+    margin-top: 8%;
+}
+.ipad ul li h4 {
+    font-size: 120%; /* Scalable subtitle size */
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 1%;
+}
+.ipad ul li p {
+    font-size: 110%; 
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1%;
+}
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    text-align: center;
+    gap: 5%; 
+    position: absolute;
+    top: 324%;
+}
+.button-11{
+    display: flex;
+    gap: 4%;
+   
+}
+.buy-button {
+    background-color: #2665a3;
+   
+    padding: 3% 6%; 
+    font-size: 110%; 
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 4%; 
+    transition: background-color 1.45s ease-out;
+    // max-width: 12.25%;
+   
+
+}
+.read-more-button{
+    background-color: teal;
+   
+    padding: 3% 6%; 
+    font-size: 110%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 4%; 
+    transition: background-color 1.45s ease-out;
+}
+.buy-button {
+    background-color: #007aff;
+    border-radius: 50px;
+}
+.buy-button:hover {
+    background-color: rgb(45, 57, 98);
+    transform: scale(1.05); 
+}
+.read-more-button {
+    background-color: teal;
+    border-radius: 50px;
+}
+
+.read-more-button:hover {
+    background-color: rgb(9, 41, 43);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
 @media (max-width: 480px) {
     .ipad ul li {
         flex: 1 1 calc(100% - 20px); /* Each image takes up 100% on very small screens */

@@ -5,7 +5,7 @@
     padding: 0%;
 }
 nav {
-    background-color: transparent;
+    background-color: #000;
     position: relative; 
     width: 100%;
     padding: 1% 0%;
@@ -26,11 +26,12 @@ nav {
 }
 
 .navbar li a {
-    color: #000; 
+    color: white; 
     text-decoration: none; 
     font-size: 95%; 
     padding: 1% 3%; 
     transition: color 0.8s ease-out; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar li a:hover {
@@ -38,12 +39,20 @@ nav {
 }
 
 .fa-apple {
-    font-size: 140%;
+    font-size: 160%;
     margin-right: 2%; 
-    color: #000;
+    color: white;
+    margin-left: 2%;
 }
 
 // main
+.offer{
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 
 .ph-head{
     display: flex;
@@ -54,12 +63,14 @@ nav {
 
 }
  .ph-h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 230%;
     text-align: left;
     margin-left: 2%;
     
 }
 .ph--h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 180%;
     text-align: right;
     margin-right: 2%;
@@ -80,7 +91,8 @@ nav {
     align-items: center; 
     gap: 10px; 
     height: 60%; 
-    padding: 10px; 
+    padding: 1%; 
+    margin: 2%;
 }
 
 .ph-ph ul {
@@ -94,6 +106,7 @@ nav {
     max-width: 25%; 
     text-align: center;
     box-sizing: border-box;
+    overflow: hidden ;
 }
 ph-ph ul li img {
     width: 100%; 
@@ -110,13 +123,14 @@ ph-ph ul li img {
     font-size: 150%; 
     font-weight: bold;
     color: #000;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    margin-top: 8%;
 }
 .ph-ph ul li h4 {
     font-size: 120%; /* Scalable subtitle size */
     font-weight: normal;
     color: #555;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 .ph-ph ul li p {
     font-size: 110%; 
@@ -129,9 +143,10 @@ ph-ph ul li img {
 .button-container {
     display: flex; 
     justify-content: center; 
+    text-align: center;
     gap: 5%; 
-    margin-top: 3%; 
-    padding-bottom: 3%;
+    position: absolute;
+    top: 258%;
 }
 .button-11{
     display: flex;
@@ -148,6 +163,7 @@ ph-ph ul li img {
     text-decoration: none;
     border-radius: 4%; 
     transition: background-color 1.45s ease-out;
+    // max-width: 12.25%;
    
 
 }
@@ -185,12 +201,65 @@ ph-ph ul li img {
 
 
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 10px;
+    }
+
+    .navbar li a {
+        font-size: 85%; /* Adjust font size for smaller screens */
+        padding: 2% 5%; /* Increase touch target for links */
+    }
+
+    .ph-head {
+        flex-direction: column; /* Stack the header content */
+        padding: 2%;
+        text-align: center;
+    }
+
+    .ph-h1, .ph--h1 {
+        font-size: 180%; /* Scale down the font sizes */
+        margin: 0 auto; /* Center-align the content */
+        text-align: center;
+    }
+
+    .ph-ph {
+        flex-direction: column; /* Stack the photos vertically */
+        gap: 20px; /* Add spacing between items */
+    }
+
+    .ph-ph ul {
+        flex-direction: column; /* Stack list items */
+        gap: 15px;
+    }
+
     .ph-ph ul li {
-        flex: 1 1 calc(100% - 20px); 
-        max-width: 100%;
+        max-width: 100%; /* Make images take full width */
+        margin: 0 auto; /* Center-align the list items */
+    }
+
+    .ph-ph ul li img {
+        border-radius: 5%; /* Retain rounded corners */
+    }
+
+    .ph-ph ul li h2, .ph-ph ul li h4, .ph-ph ul li p {
+        font-size: 90%; /* Adjust text size for smaller screens */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px;
+        position: static; /* Remove absolute positioning for better alignment */
+        margin-top: 5%;
+    }
+
+    .buy-button, .read-more-button {
+        padding: 3% 10%; /* Adjust button padding for better touch targets */
+        font-size: 90%; /* Adjust font size */
     }
 }
+
 
 
 
