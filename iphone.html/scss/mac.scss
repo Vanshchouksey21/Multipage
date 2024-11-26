@@ -44,6 +44,9 @@ nav {
     color: white;
     margin-left: 2%;
 }
+// #height{
+//     height: 150vh;
+// }
 .offer{
     text-align: center;
     width: 100%;
@@ -81,3 +84,202 @@ nav {
     font-size: 160% ;
 
 }
+.mac_book{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 1%;
+    height: 100%; 
+   
+}
+.mac_book ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px; 
+}
+.mac_book ul li {
+    max-width: 25%; 
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden ;
+}
+.mac_book ul li img {
+    width: 100%; 
+    border-radius: 5%; 
+    margin-bottom: 3%; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+.mac_book ul li img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+.mac_book ul li h2 {
+    font-size: 150%; 
+    font-weight: bold;
+    color: #000;
+    // margin-bottom: 1%;
+    margin-top: 0.5%;
+}
+.mac_book ul li h4 {
+    font-size: 120%; /* Scalable subtitle size */
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 1%;
+}
+.mac_book ul li p {
+    font-size: 110%; 
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2%;
+}
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    text-align: center;
+    gap: 5%; 
+    position: absolute;
+    top: 275%;
+}
+.button-11{
+    display: flex;
+    gap: 4%;
+}
+.buy-button {
+    background-color: #2665a3;
+   
+    padding: 3% 6%; 
+    font-size: 110%; 
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 4%; 
+    transition: background-color 1.45s ease-out;
+    // max-width: 12.25%;
+   
+
+}
+.read-more-button{
+    background-color: teal;
+    margin-right: 2%;
+   
+    padding: 3% 6%; 
+    font-size: 110%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 4%; 
+    transition: background-color 1.45s ease-out;
+}
+.buy-button {
+    background-color: #007aff;
+    border-radius: 50px;
+}
+.buy-button:hover {
+    background-color: rgb(45, 57, 98);
+    transform: scale(1.05); 
+}
+.read-more-button {
+    background-color: teal;
+    border-radius: 50px;
+}
+
+.read-more-button:hover {
+    background-color: rgb(9, 41, 43);
+    transform: scale(1.05);
+}
+@media (max-width: 480px) {
+    .ipad ul li {
+        flex: 1 1 calc(100% - 20px); /* Each image takes up 100% on very small screens */
+        max-width: 100%;
+    }
+}
+
+
+
+// fotter
+// footer css
+footer {
+    position: absolute;
+    top: 300%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Ensures links wrap on smaller screens */
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-social {
+    display: flex;
+    flex-wrap: wrap; /* Adjust icons for smaller screens */
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #007aff;
+}
+
+.footer-copyright p {
+    font-size: 14px;
+    margin: 15px 0 0;
+}
+.footer-copyright-2{
+    padding-left:85% ;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .div1-pro{
+        display: none;
+    }
+
+    .footer-links ul li a {
+        font-size: 12px; /* Smaller font for compact devices */
+    }
+
+    .footer-social a {
+        font-size: 16px; /* Adjust icon size */
+        margin: 0 5px;
+    }
+
+    .footer-copyright p {
+        font-size: 12px; /* Adjust copyright text size */
+    }
+}
+
+
