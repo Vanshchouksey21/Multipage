@@ -147,6 +147,8 @@ nav {
   gap: 5%;
   position: absolute;
   top: 316%;
+  max-width: 99.6%;
+  margin-left: 0.4%;
 }
 
 .button-11 {

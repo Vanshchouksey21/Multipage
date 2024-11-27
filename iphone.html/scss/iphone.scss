@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    // overflow-x: hidden;
 }
 nav {
     background-color: #000;
@@ -95,6 +96,7 @@ nav {
     height: 60%; 
     padding: 1%; 
     margin: 2%;
+    max-width: 97.9%;
 }
 
 .ph-ph ul {
@@ -111,11 +113,13 @@ nav {
     overflow: hidden ;
 }
 ph-ph ul li img {
-    width: 100%; 
-    height: auto;
+    width: 20% ;
+    // height: 75%;
     border-radius: 5%; 
     margin-bottom: 3%; 
-    transition: transform 0.3s, box-shadow 0.3s; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow-x: hidden; 
+    // max-width: 99%;
 }
 .ph-ph ul li img:hover {
     transform: scale(1.05); 
@@ -142,13 +146,16 @@ ph-ph ul li img {
 }
 
 
+
 .button-container {
     display: flex; 
     justify-content: center; 
     text-align: center;
     gap: 5%; 
     position: absolute;
-    top: 258%;
+    top: 252%;
+    max-width: 99.6%;
+    margin-left: 0.4%;
 }
 .button-11{
     display: flex;
@@ -179,6 +186,7 @@ ph-ph ul li img {
     text-decoration: none;
     border-radius: 4%; 
     transition: background-color 1.45s ease-out;
+    margin-right: 2%;
 }
 .buy-button {
     background-color: #007aff;
@@ -197,7 +205,6 @@ ph-ph ul li img {
     background-color: rgb(9, 41, 43);
     transform: scale(1.05);
 }
-
 
 
 
