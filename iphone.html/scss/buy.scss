@@ -50,3 +50,30 @@ p {
         transform: rotate(360deg);
     }
 }
+@media (max-width: 480px) {
+    .flex {
+        padding-top: 10%; /* Reduce padding for smaller screens */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .processing-container {
+        padding: 5% 3%; /* Adjust padding for smaller screens */
+        max-width: 90%; /* Make the container more flexible */
+    }
+
+    h1 {
+        font-size: 20px; /* Slightly smaller font size */
+        margin: 5% 0; /* Adjust margins for compact view */
+    }
+
+    p {
+        font-size: 95%; /* Adjust paragraph font size */
+    }
+
+    .spinner {
+        width: 40px; /* Smaller spinner size */
+        height: 40px;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db;
+    }
+}

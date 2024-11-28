@@ -327,4 +327,53 @@ footer {
   .footer-copyright p {
     font-size: 12px; /* Adjust copyright text size */
   }
+}
+@media (max-width: 480px) {
+  /* Hide the navbar by default */
+  .navbar {
+    display: none;
+    flex-direction: column; /* Stack menu items vertically */
+    position: absolute;
+    top: 100%; /* Below the nav bar */
+    left: 0;
+    background-color: #000; /* Match navbar background */
+    width: 100%;
+    z-index: 10;
+    padding: 10px 0;
+  }
+  /* Style for the Apple logo */
+  .fa-apple {
+    font-size: 160%;
+    color: white;
+    margin-left: 2%;
+  }
+  /* Create a bars (hamburger) menu icon */
+  .fa-bars {
+    font-size: 160%;
+    color: white;
+    cursor: pointer;
+    margin-right: 5%;
+  }
+  /* Position the Apple logo and bars */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%; /* Add spacing around the nav elements */
+  }
+  /* Checkbox for toggle functionality */
+  input#menu-toggle {
+    display: none; /* Hide the checkbox itself */
+  }
+  /* When the checkbox is checked, show the navbar */
+  input#menu-toggle:checked ~ .navbar {
+    display: flex; /* Reveal the navbar */
+  }
+  /* Navbar link styling */
+  .navbar li a {
+    font-size: 90%; /* Adjust font size for smaller screens */
+    padding: 10px 0;
+    display: block; /* Block-level links for easy tapping */
+    text-align: center;
+  }
 }/*# sourceMappingURL=iphone.css.map */

@@ -3,7 +3,6 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    // overflow-x: hidden;
 }
 nav {
     background-color: #000;
@@ -48,6 +47,14 @@ nav {
     color: white;
     margin-left: 2%;
 }
+.offer{
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
 // main
 .offer{
     text-align: center;
@@ -133,7 +140,7 @@ ph-ph ul li img {
     margin-top: 8%;
 }
 .ph-ph ul li h4 {
-    font-size: 120%; /* Scalable subtitle size */
+    font-size: 120%; 
     font-weight: normal;
     color: #555;
     margin-bottom: 1%;
@@ -212,60 +219,60 @@ ph-ph ul li img {
 
 @media only screen and (max-width: 480px) {
     .navbar {
-        flex-direction: column; /* Stack navigation items vertically */
+        flex-direction: column;
         gap: 10px;
     }
 
     .navbar li a {
-        font-size: 85%; /* Adjust font size for smaller screens */
-        padding: 2% 5%; /* Increase touch target for links */
+        font-size: 85%; 
+        padding: 2% 5%; 
     }
 
     .ph-head {
-        flex-direction: column; /* Stack the header content */
+        // flex-direction: column; 
         padding: 2%;
         text-align: center;
     }
 
     .ph-h1, .ph--h1 {
-        font-size: 180%; /* Scale down the font sizes */
-        margin: 0 auto; /* Center-align the content */
+        font-size: 180%; 
+        margin: 0 auto; 
         text-align: center;
     }
 
     .ph-ph {
-        flex-direction: column; /* Stack the photos vertically */
-        gap: 20px; /* Add spacing between items */
+        // flex-direction: column; 
+        gap: 20px; 
     }
 
     .ph-ph ul {
-        flex-direction: column; /* Stack list items */
+        flex-direction: column; 
         gap: 15px;
     }
 
     .ph-ph ul li {
-        max-width: 100%; /* Make images take full width */
-        margin: 0 auto; /* Center-align the list items */
+        max-width: 100%; 
+        margin: 0 auto; 
     }
 
     .ph-ph ul li img {
-        border-radius: 5%; /* Retain rounded corners */
+        border-radius: 5%; 
     }
 
     .ph-ph ul li h2, .ph-ph ul li h4, .ph-ph ul li p {
-        font-size: 90%; /* Adjust text size for smaller screens */
+        font-size: 90%; 
     }
 
     .button-container {
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column; 
         gap: 15px;
-        position: static; /* Remove absolute positioning for better alignment */
+        position: static; 
         margin-top: 5%;
     }
 
     .buy-button, .read-more-button {
-        padding: 3% 10%; /* Adjust button padding for better touch targets */
-        font-size: 90%; /* Adjust font size */
+        padding: 3% 10%; 
+        font-size: 90%; 
     }
 }
 
@@ -295,7 +302,7 @@ footer {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Ensures links wrap on smaller screens */
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
 }
@@ -308,7 +315,7 @@ footer {
 
 .footer-social {
     display: flex;
-    flex-wrap: wrap; /* Adjust icons for smaller screens */
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 10px;
 }
@@ -333,23 +340,24 @@ footer {
     padding-left:85% ;
 }
 
-/* Media Query for Smaller Screens */
+
 @media (max-width: 768px) {
     .div1-pro{
         display: none;
     }
 
     .footer-links ul li a {
-        font-size: 12px; /* Smaller font for compact devices */
+        font-size: 12px; 
     }
 
     .footer-social a {
-        font-size: 16px; /* Adjust icon size */
+        font-size: 16px; 
         margin: 0 5px;
     }
 
     .footer-copyright p {
-        font-size: 12px; /* Adjust copyright text size */
+        font-size: 12px; 
     }
 }
+
 

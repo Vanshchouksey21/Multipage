@@ -125,7 +125,7 @@ nav {
     margin-top: 8%;
 }
 .ipad ul li h4 {
-    font-size: 120%; /* Scalable subtitle size */
+    font-size: 120%; 
     font-weight: normal;
     color: #555;
     margin-bottom: 1%;
@@ -202,7 +202,7 @@ nav {
 
 @media (max-width: 480px) {
     .ipad ul li {
-        flex: 1 1 calc(100% - 20px); /* Each image takes up 100% on very small screens */
+        flex: 1 1 calc(100% - 20px); 
         max-width: 100%;
     }
 }
@@ -232,7 +232,7 @@ footer {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Ensures links wrap on smaller screens */
+    flex-wrap: wrap; 
     gap: 15px;
     justify-content: center;
 }
@@ -245,7 +245,7 @@ footer {
 
 .footer-social {
     display: flex;
-    flex-wrap: wrap; /* Adjust icons for smaller screens */
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 10px;
 }
@@ -270,24 +270,24 @@ footer {
     padding-left:85% ;
 }
 
-/* Media Query for Smaller Screens */
+
 @media (max-width: 768px) {
     .div1-pro{
         display: none;
     }
 
     .footer-links ul li a {
-        font-size: 12px; /* Smaller font for compact devices */
+        font-size: 12px; 
     }
 
     .footer-social a {
-        font-size: 16px; /* Adjust icon size */
+        font-size: 16px; 
         margin: 0 5px;
     }
 
     .footer-copyright p {
-        font-size: 12px; /* Adjust copyright text size */
-    }
+        font-size: 12px; 
+}
 }
 
 
