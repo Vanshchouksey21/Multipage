@@ -5,6 +5,10 @@
   padding: 0%;
 }
 
+#bar1 {
+  display: none;
+}
+
 nav {
   background-color: #000;
   position: relative;
@@ -166,8 +170,7 @@ footer {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Ensures links wrap on smaller screens */
-  gap: 15px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 

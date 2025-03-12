@@ -53,6 +53,13 @@ nav {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.offer {
+  text-align: center;
+  width: 100%;
+  padding: 1%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .ph-head {
   display: flex;
   text-align: center;
@@ -84,109 +91,89 @@ nav {
   font-size: 160%;
 }
 
-.ph-ph {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  height: 60%;
-  padding: 1%;
-  margin: 2%;
-  max-width: 97.9%;
+/* General Styles */
+.hight {
+  max-width: 99.8%;
+  height: 75%;
 }
 
 .ph-ph ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  max-width: 99.8%;
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Ensure a single row layout */
+  gap: 2%; /* Spacing between items */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 0;
+  margin: 3% 1%;
+  list-style: none;
 }
 
-.ph-ph ul li {
-  max-width: 25%;
+/* Individual Product Cards */
+.ph-ph ul .hight li {
+  flex: 0 0 auto; /* Prevent resizing */
+  width: 90%; /* Consistent width for all cards */
   text-align: center;
-  box-sizing: border-box;
-  overflow: hidden;
+  height: 5%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-ph-ph ul li img {
-  width: 20%;
-  border-radius: 5%;
-  margin-bottom: 3%;
-  transition: transform 0.3s, box-shadow 0.3s;
-  overflow-x: hidden;
+.ph-ph ul .hight li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.ph-ph ul li img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.ph-ph ul .hight li img {
+  max-width: 99.8%; /* Ensure images fit within the card */
+  height: auto;
+  margin-bottom: 1.5%;
 }
 
-.ph-ph ul li h2 {
-  font-size: 150%;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 1%;
-  margin-top: 8%;
+.ph-ph ul .hight li h2,
+.ph-ph ul .hight li h4 {
+  max-width: 99.8%;
+  margin: 1.5% 0;
 }
 
-.ph-ph ul li h4 {
-  font-size: 120%; /* Scalable subtitle size */
-  font-weight: normal;
+.ph-ph ul .hight li p {
+  max-width: 99.8%;
   color: #555;
-  margin-bottom: 1%;
+  font-size: 84%;
+  margin: 1% 0;
 }
 
-.ph-ph ul li p {
-  font-size: 110%;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 1%;
-}
-
-.button-container {
+/* Button Section */
+.button-11 {
+  max-width: 99.8%;
   display: flex;
   justify-content: center;
-  text-align: center;
-  gap: 5%;
-  position: absolute;
-  top: 252%;
-  max-width: 99.6%;
-  margin-left: 0.4%;
+  gap: 10px;
+  margin-top: 1.5%;
 }
 
-.button-11 {
-  display: flex;
-  gap: 4%;
-}
-
-.buy-button {
-  background-color: #2665a3;
-  padding: 3% 6%;
-  font-size: 110%;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  border-radius: 4%;
-  transition: background-color 1.45s ease-out;
-}
-
+.buy-button,
 .read-more-button {
-  background-color: teal;
-  padding: 3% 6%;
-  font-size: 110%;
+  max-width: 99.8%;
+  padding: 3% 0.5%;
+  font-size: 84%;
   font-weight: bold;
   color: white;
   text-decoration: none;
-  border-radius: 4%;
-  transition: background-color 1.45s ease-out;
-  margin-right: 2%;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .buy-button {
   background-color: #007aff;
-  border-radius: 50px;
+}
+
+.read-more-button {
+  background-color: teal;
 }
 
 .buy-button:hover {
@@ -194,64 +181,11 @@ ph-ph ul li img {
   transform: scale(1.05);
 }
 
-.read-more-button {
-  background-color: teal;
-  border-radius: 50px;
-}
-
 .read-more-button:hover {
   background-color: rgb(9, 41, 43);
   transform: scale(1.05);
 }
 
-@media only screen and (max-width: 480px) {
-  .navbar {
-    flex-direction: column; /* Stack navigation items vertically */
-    gap: 10px;
-  }
-  .navbar li a {
-    font-size: 85%; /* Adjust font size for smaller screens */
-    padding: 2% 5%; /* Increase touch target for links */
-  }
-  .ph-head {
-    flex-direction: column; /* Stack the header content */
-    padding: 2%;
-    text-align: center;
-  }
-  .ph-h1, .ph--h1 {
-    font-size: 180%; /* Scale down the font sizes */
-    margin: 0 auto; /* Center-align the content */
-    text-align: center;
-  }
-  .ph-ph {
-    flex-direction: column; /* Stack the photos vertically */
-    gap: 20px; /* Add spacing between items */
-  }
-  .ph-ph ul {
-    flex-direction: column; /* Stack list items */
-    gap: 15px;
-  }
-  .ph-ph ul li {
-    max-width: 100%; /* Make images take full width */
-    margin: 0 auto; /* Center-align the list items */
-  }
-  .ph-ph ul li img {
-    border-radius: 5%; /* Retain rounded corners */
-  }
-  .ph-ph ul li h2, .ph-ph ul li h4, .ph-ph ul li p {
-    font-size: 90%; /* Adjust text size for smaller screens */
-  }
-  .button-container {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 15px;
-    position: static; /* Remove absolute positioning for better alignment */
-    margin-top: 5%;
-  }
-  .buy-button, .read-more-button {
-    padding: 3% 10%; /* Adjust button padding for better touch targets */
-    font-size: 90%; /* Adjust font size */
-  }
-}
 footer {
   background-color: #333;
   color: #fff;
@@ -273,7 +207,7 @@ footer {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Ensures links wrap on smaller screens */
+  flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
 }
@@ -286,7 +220,7 @@ footer {
 
 .footer-social {
   display: flex;
-  flex-wrap: wrap; /* Adjust icons for smaller screens */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
@@ -310,70 +244,4 @@ footer {
 
 .footer-copyright-2 {
   padding-left: 85%;
-}
-
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) {
-  .div1-pro {
-    display: none;
-  }
-  .footer-links ul li a {
-    font-size: 12px; /* Smaller font for compact devices */
-  }
-  .footer-social a {
-    font-size: 16px; /* Adjust icon size */
-    margin: 0 5px;
-  }
-  .footer-copyright p {
-    font-size: 12px; /* Adjust copyright text size */
-  }
-}
-@media (max-width: 480px) {
-  /* Hide the navbar by default */
-  .navbar {
-    display: none;
-    flex-direction: column; /* Stack menu items vertically */
-    position: absolute;
-    top: 100%; /* Below the nav bar */
-    left: 0;
-    background-color: #000; /* Match navbar background */
-    width: 100%;
-    z-index: 10;
-    padding: 10px 0;
-  }
-  /* Style for the Apple logo */
-  .fa-apple {
-    font-size: 160%;
-    color: white;
-    margin-left: 2%;
-  }
-  /* Create a bars (hamburger) menu icon */
-  .fa-bars {
-    font-size: 160%;
-    color: white;
-    cursor: pointer;
-    margin-right: 5%;
-  }
-  /* Position the Apple logo and bars */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%; /* Add spacing around the nav elements */
-  }
-  /* Checkbox for toggle functionality */
-  input#menu-toggle {
-    display: none; /* Hide the checkbox itself */
-  }
-  /* When the checkbox is checked, show the navbar */
-  input#menu-toggle:checked ~ .navbar {
-    display: flex; /* Reveal the navbar */
-  }
-  /* Navbar link styling */
-  .navbar li a {
-    font-size: 90%; /* Adjust font size for smaller screens */
-    padding: 10px 0;
-    display: block; /* Block-level links for easy tapping */
-    text-align: center;
-  }
 }/*# sourceMappingURL=iphone.css.map */

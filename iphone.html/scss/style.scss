@@ -4,6 +4,11 @@
     margin: 0%;
     padding: 0%;
 }
+#bar1{
+    
+    display: none;
+
+}
 nav {
     background-color: #000;
     position: relative; 
@@ -186,8 +191,7 @@ footer {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Ensures links wrap on smaller screens */
-    gap: 15px;
+    flex-wrap: wrap; 
     justify-content: center;
 }
 
@@ -243,4 +247,37 @@ footer {
         font-size: 12px; /* Adjust copyright text size */
     }
 }
+// @media (max-width: 480px) {
+//    #vns{
+//     display: block;
+//    }
+//     .navbar {
+//         display: none;
+//         flex-direction: column;
+//         position: absolute;
+//         top: 50px;
+//         left: 0;
+//         width: 100%;
+//         background-color: aquamarine;
+//         text-align: center;
+//         line-height: 40px;
+//     }
+//     #bars:checked ~ nav .navbar {
+//         display: flex;
+//     }
+//     #bar1 {
+//         position: absolute;
+//         top: 10px;
+//         right: 10px;
+//         z-index: 100;
+//     }
+//     #bar1 i {
+//         font-size: 30px;
+//         color: white;
+//     }
+// }
 
+    
+    
+    
+    
